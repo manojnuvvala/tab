@@ -1,0 +1,7 @@
+## Do not commit these to the git repo
+
+# dev tools
+node_modules
+
+# Visual Studio Code cache/options directory
+.vscode/

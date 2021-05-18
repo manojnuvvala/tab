@@ -1,0 +1,43 @@
+{
+  "name": "chrome_new_tab_ext",
+  "version": "1.0.0",
+  "description": "Customized Chrome 'New Tab' Extension, which can be updated to reflect current links each semester",
+  "keywords": [
+    "chrome-extension",
+    "new-tab",
+    "browser-extension",
+    "html",
+    "css",
+    "javascript",
+    "location"
+  ],
+  "homepage": "https://bitbucket.org/professorcase/chrome_new_tab_ext#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://professorcase@bitbucket.org/professorcase/chrome_new_tab_ext.git"
+  },
+  "license": "MIT",
+  "author": "Denise Case",
+  "main": "tab.html",
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
+    "sort": "npx sort-package-json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run sort && npm run lint-fix"
+    }
+  },
+  "dependencies": {
+    "axios": "latest",
+    "globals": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-import": "latest",
+    "husky": "latest",
+    "sort-package-json": "latest"
+  }
+}
